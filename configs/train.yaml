@@ -1,0 +1,10 @@
+# configs/train.yaml
+model: models/weights/yolov8n-seg.pt        
+data:  configs/data.yaml
+task:  segment
+epochs: 30
+imgsz:  640
+batch:  16
+augment: true
+project: runs
+name:    segment_exp

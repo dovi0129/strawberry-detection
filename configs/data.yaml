@@ -1,0 +1,8 @@
+# configs/data.yaml
+path:  .                # ← 이전 ../data 를 . 으로
+train: data/images/train
+val:   data/images/val
+test:  data/images/test
+
+names:
+  0: strawberry

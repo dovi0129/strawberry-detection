@@ -1,0 +1,13 @@
+# configs/infer.yaml
+weights:  runs/segment_exp/weights/best.pt
+data:     configs/data.yaml
+split:    test
+source:   data/images/test
+project:  runs
+name:     segment_exp_test
+
+imgsz:    640
+batch:    16
+
+conf:     0.01  
+iou:      0.45
