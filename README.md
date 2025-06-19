@@ -50,10 +50,7 @@ python scripts/test.py --config configs/infer.yaml
 
 ## 주요 스크립트
 
-* **`scripts/train.py`**
-  └─ `--config` (`configs/train.yaml`) 파일을 읽어 YOLOv8-seg로 모델 학습
-* **`scripts/infer.py`**
-  └─ `--config` (`configs/infer.yaml`) 파일을 읽어 모델 평가
-* **`notebooks/yolov8_test.ipynb`**
-  └─ 노트북 환경에서 추론 결과 확인 및 수확 객체 판별 및 파지점 확인 가능
+* **`scripts/train.py`**: `--config` (`configs/train.yaml`) 파일을 읽어 YOLOv8-seg로 모델 학습
+* **`scripts/infer.py`**: `--config` (`configs/infer.yaml`) 파일을 읽어 모델 평가
+* **`notebooks/yolov8_test.ipynb`**: 노트북 환경에서 추론 결과 확인 및 수확 객체 판별 및 파지점 확인 가능
 
