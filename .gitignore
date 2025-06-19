@@ -1,27 +1,24 @@
-# 1) 원본 데이터(= data 폴더)만 무시
-data/images/**
-data/images_past/**
-data/depth_maps/**
-data/labels/**
-data/labels_past/**
-# (필요하다면 .npy/.txt/.json/.csv도 data 안만)
-data/**/*.npy
-data/**/*.txt
-data/**/*.json
-data/**/*.csv
-
-# 2) 결과물이 올라갈 runs 폴더는 예외 처리 (추가)
-!runs/
-!runs/**
-
-# 3) 나머지 전역 패턴은 제거 또는 다른 곳으로!
-#   이제부터 전역 *.jpg,*.png 필터는 쓰지 않습니다.
-
-# 4) Jupyter / 파이썬 캐시
-__pycache__/
-.ipynb_checkpoints/
-
-# 5) 모델 파일
-*.pt
-*.pth
-*.onnx
+# 1) 원본 데이터만 무시
+>> data/images/**
+>> data/images_past/**
+>> data/depth_maps/**
+>> data/labels/**
+>> data/labels_past/**
+>> data/**/*.npy
+>> data/**/*.txt
+>> data/**/*.json
+>> data/**/*.csv
+>>
+>> # 2) 결과물이 저장되는 runs/ 폴더는
+>> #    버전관리 (느낌표로 예외 처리)
+>> !runs/
+>> !runs/**
+>>
+>> # 3) Jupyter / Python 캐시
+>> __pycache__/
+>> .ipynb_checkpoints/
+>>
+>> # 4) 모델 가중치
+>> *.pt
+>> *.pth
+>> *.onnx
