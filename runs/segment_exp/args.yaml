@@ -1,7 +1,7 @@
 task: segment
 mode: train
-model: yolov8n-seg.pt
-data: ../configs/data.yaml
+model: C:\Users\User\Documents\백민우\Capstone\strawberry detection\models/weights/yolov8n-seg.pt
+data: configs/data.yaml
 epochs: 30
 time: null
 patience: 100
@@ -12,7 +12,7 @@ save_period: -1
 cache: false
 device: null
 workers: 8
-project: ./runs
+project: runs
 name: segment_exp
 exist_ok: false
 pretrained: true
